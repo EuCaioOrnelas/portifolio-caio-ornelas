@@ -97,7 +97,7 @@ html {
   margin-left: -3px;
 }
 .home .home-content .text-3 {
-  font-size: 40px;
+  font-size: 33px;
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
@@ -118,6 +118,10 @@ html {
 .home .home-content a:hover {
   color: #0888d3;
   background: none;
+}
+
+.home .typing {
+  font-size: 33px;
 }
 
 /*  Menu  Mobile  */
@@ -602,6 +606,13 @@ footer span a:hover {
 @media (max-width: 690px) {
   .home .home-content .text-2 {
     font-size: 60px;
+  }
+  .home .max-width {
+    margin: auto 0 auto 10px;
+  }
+  .about .img1 {
+    padding: 30px;
+    border-radius: 15px;
   }
   .home .home-content .text-3 {
     font-size: 32px;
