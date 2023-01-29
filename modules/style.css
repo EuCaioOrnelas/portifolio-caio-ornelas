@@ -218,7 +218,6 @@ footer {
 }
 .about .about-content .right {
   width: 55%;
-  padding-left: 35px;
 }
 .about .about-content .right .text {
   font-size: 25px;
@@ -378,7 +377,7 @@ footer {
 .skills .skills-content .right .js::before {
   width: 62%;
 }
-.skills .skills-content .right .php::before {
+.skills .skills-content .right .nodejs::before {
   width: 32%;
 }
 
