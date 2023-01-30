@@ -189,6 +189,7 @@ section .title::after {
   transform: translateX(-50%);
 }
 .about,
+.projetos,
 .services,
 .skills,
 .teams,
@@ -199,7 +200,8 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content {
+.contact .contact-content,
+.projetos .project-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -276,7 +278,7 @@ footer {
   content: "Que Ofereceço";
   color: #f1f1f1;
   font-size: 19px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
@@ -311,7 +313,7 @@ footer {
 /*  sessão especialidades  */
 .skills {
   background-color: #f1f1f1;
-  padding-bottom: 10px;
+  padding-bottom: 140px;
 }
 
 .skills .title::after {
@@ -383,6 +385,126 @@ footer {
 }
 .skills .skills-content .right .nodejs::before {
   width: 32%;
+}
+/* Projetos */
+
+#projetos {
+  background-color: #101014;
+  padding-bottom: 15px;
+}
+
+#projetos h2,
+.projetos a {
+  text-align: center;
+}
+
+#projetos h2 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #f1f1f1;
+}
+
+#projetos a {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  display: inline-block;
+  background: #0888d3;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #0888d3;
+  transition: all 0.3s ease;
+}
+
+#projetos a:hover {
+  color: #0888d3;
+  background: none;
+}
+
+.githublink {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 93px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.pro {
+  background-color: #f1f1f1;
+  height: 225px;
+  width: 340px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+  margin-bottom: 30px;
+}
+
+.pro div p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.pro:hover {
+  letter-spacing: 5px;
+}
+
+.pro div {
+  background-color: #0888d3;
+  width: 1000px;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
+}
+
+.projetos-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29.5px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  #projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .projetos-itens {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 950px) {
+  .pro {
+    max-width: 350px;
+    align-items: center;
+  }
 }
 
 /*  sessão Contato  */
