@@ -22,9 +22,15 @@ $(document).ready(function () {
     loop: true,
   });
 
+  /* menu mobile*/
+
   $(".menu-btn").click(function () {
     $(".navbar .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
+  });
+
+  $(".menu li a").on("click", function () {
+    $(".menu-btn").trigger("click");
   });
 
   $(".carousel").owlCarousel({
