@@ -50,7 +50,8 @@ html {
   font-weight: 500;
 }
 .navbar .logo a span {
-  color: #0888d3;
+  color: linear-gradient(90deg, rgba(4,32,112,1) 15%, 
+  rgba(8,61,211,1) 47%, rgba(8,136,211,1) 100%);
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span {
